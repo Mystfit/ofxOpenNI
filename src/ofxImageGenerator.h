@@ -42,8 +42,10 @@ public:
 	bool setup(ofxOpenNIContext* pContext);
 	void update();
 	void draw(float x=0, float y=0, float w=640, float h=480);
+    
+    ofTexture & getTexture(){ return image_texture; };
 	
-	unsigned char*		getPixels() {return image_pixels;};
+	unsigned char*		getPixels(){return image_pixels;};
 	
 	xn::ImageGenerator& getXnImageGenerator();
 	

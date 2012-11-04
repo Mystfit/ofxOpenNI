@@ -76,6 +76,8 @@ public:
 	int					getMaxDepth();
 	int					getWidth();
 	int					getHeight();
+    
+    ofTexture			depth_texture;
 
 	ofColor				getPixelColor(int x, int y);
 	ofColor				getPixelColor(const ofPoint & p);
@@ -90,7 +92,6 @@ private:
 	xn::DepthGenerator	depth_generator;
 	xn::DepthMetaData	dmd;
 
-	ofTexture			depth_texture;
 	unsigned char*		depth_pixels;
 	int					depth_coloring;
 	int					width, height;
